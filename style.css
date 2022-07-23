@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    transition-duration: 200ms;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(45deg, #fc5c7d, #6a82fb);
+    min-height: 100%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clock {
+    background-color: hsl(0, 0%, 2%);
+    width: 38%;
+    height: 535px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    text-align: center;
+}
+
+.clock h1, #period {
+    font-size: 55px;
+    font-weight: 400;
+    color: white;
+}
+
+.clock p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.233);
+}
+
+.colon {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .clock {
+        width: 70%;
+        height: 220px;
+        flex-direction: row;
+        gap : 5%;
+    }
+
+    .day h1, .hours h1, .min h1, .sec h1, .period {
+        font-size: 65px;
+    }
+
+    .day h1, .hours h1, .min h1, .sec h1 {
+        width: 80px;
+    }
+
+    .colon {
+        display: block;
+        font-size: 40px!important;
+    }
+}
