@@ -14,13 +14,13 @@ let secNum = date.getSeconds ()
 
 function findDay (dayNum) {
     
-    if (dayNum === 1) day = "MO"
-    else if (dayNum === 2) day = "TU"
-    else if (dayNum === 3) day = "WE"
-    else if (dayNum === 4) day = "TH"
-    else if (dayNum === 5) day = "FR"
-    else if (dayNum === 6) day = "SA"
-    else if (dayNum === 7) day = "MO"
+    if (dayNum === 0) day = "SU"
+    else if (dayNum === 1) day = "TU"
+    else if (dayNum === 2) day = "WE"
+    else if (dayNum === 3) day = "TH"
+    else if (dayNum === 4) day = "FR"
+    else if (dayNum === 5) day = "SA"
+    else if (dayNum === 6) day = "MO"
 
     return day
 }
@@ -34,8 +34,8 @@ function setTime () {
         hours.textContent = hoursNum
         period.textContent = "AM"
     } 
-    
-    dayEl.textContent = findDay (dayNum + 1)
+
+    dayEl.textContent = findDay (dayNum)
     minutes.textContent = minNum
     seconds.textContent = secNum
 }
