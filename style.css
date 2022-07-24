@@ -21,6 +21,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+#day-name {
+    width: 110px;
+}
+
 .clock {
     background-color: hsl(0, 0%, 2%);
     width: 38%;
