@@ -13,6 +13,7 @@ let minNum = date.getMinutes ()
 let secNum = date.getSeconds ()
 
 function findDay (dayNum) {
+    
     if (dayNum === 1) day = "MO"
     else if (dayNum === 2) day = "TU"
     else if (dayNum === 3) day = "WE"
@@ -34,6 +35,7 @@ function setTime () {
         period.textContent = "AM"
     } 
     
+    dayEl.textContent = findDay (dayNum + 1)
     minutes.textContent = minNum
     seconds.textContent = secNum
 }
